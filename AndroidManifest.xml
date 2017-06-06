@@ -1,0 +1,3 @@
+<manifest android:debuggable=”false” android:hardwareAccelerated="true" android:versionCode="3" 
+android:versionName="1.0.3" android:windowSoftInputMode="adjustPan" package="com.compay.app" 
+xmlns:android="http://schemas.android.com/apk/res/android">
