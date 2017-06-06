@@ -1,0 +1,147 @@
+
+	<!--
+Author: Dustin Hammack
+A calculator to add times together without having to do any of the math!
+ 
+This project was created because I am studying from several online courses, mostly from Udemy.com. Some of the courses I am learning from are very lengthy and filled with 10+ sections in each course, so I created this Time Calculator, to be able to input the times of each section and then calculate the section as a whole(WITHOUT HAVING TO DO ANY OF THE MATH, BECAUSE DOING THE ACTUAL MATH REQUIRED TOO MANY STEPS), so then I would know how long each section is and can base my study time off of the length of each section. For example, if I allow myself 3hrs a day to study, and section 1 is 30min, section 2 is 2hrs, section 3 is 3hrs, section 4 is 1hr, and section 5 is 45min, then I can plan to study sections 1 and 2 on day # 1, section 3 on day # 2, and sections 4 and 5 on day # 3.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Calculator</title>
+<!--    <link rel="stylesheet" href="styles/normalize.css" type="text/css">-->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="height=device-height, initial-scale=1">
+	    
+    <!-- Load the CDN of jQueryfirst -->
+    <script
+      src="https://code.jquery.com/jquery-2.1.4.min.js"
+      integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+      crossorigin="anonymous"></script>
+
+    <!-- If CDN fails to load, serve up the local jQuery -->
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="scripts/jquery-3.2.1.js"></script');
+    </script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+    
+    <meta name="Time Calculator" content="Add times together without having to do any math!">
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div id="container">
+
+        <h1>Time Calculator</h1>
+
+        <form>
+            <div>
+                <label for="hours" id="hour_lbl" class="labels">Hours:</label>
+                <label for="minutes" id="min_lbl" class="labels">Minutes:</label>
+                <label for="seconds" id="sec_lbl" class="labels">Seconds:</label>
+            </div>
+            <br>
+            <input type="number" name="time" id="hours" min="0" placeholder="hours">
+            <input type="number" name="time" id="minutes" min="0" placeholder="minutes">
+            <input type="number" name="time" id="seconds" min="0" placeholder="seconds">
+            <br>
+            <button type="button" name="time" id="add">Add Time</button>
+            <button type="button" id="calculate">Calculate Times</button>
+
+            <fieldset>
+                <legend>Times</legend>
+				<p></p>
+                <ol class="times" contenteditable="true" >
+                    <li id="1">00h:00m:00s</li>
+                    <li id="2">00h:00m:00s</li>
+                    <li id="3">00h:00m:00s</li>
+                    <li id="4">00h:00m:00s</li>
+                    <li id="5">00h:00m:00s</li>
+                    <li id="6">00h:00m:00s</li>
+                    <li id="7">00h:00m:00s</li>
+                    <li id="8">00h:00m:00s</li>
+                    <li id="9">00h:00m:00s</li>
+                    <li id="10">00h:00m:00s</li>
+                </ol>
+                <ol class="times" start="11">
+                    <li id="11">00h:00m:00s</li>
+                    <li id="12">00h:00m:00s</li>
+                    <li id="13">00h:00m:00s</li>
+                    <li id="14">00h:00m:00s</li>
+                    <li id="15">00h:00m:00s</li>
+                    <li id="16">00h:00m:00s</li>
+                    <li id="17">00h:00m:00s</li>
+                    <li id="18">00h:00m:00s</li>
+                    <li id="19">00h:00m:00s</li>
+                    <li id="20">00h:00m:00s</li>
+                </ol>
+                <ol class="times" start="21">
+                    <li id="21">00h:00m:00s</li>
+                    <li id="22">00h:00m:00s</li>
+                    <li id="23">00h:00m:00s</li>
+                    <li id="24">00h:00m:00s</li>
+                    <li id="25">00h:00m:00s</li>
+                    <li id="26">00h:00m:00s</li>
+                    <li id="27">00h:00m:00s</li>
+                    <li id="28">00h:00m:00s</li>
+                    <li id="29">00h:00m:00s</li>
+                    <li id="30">00h:00m:00s</li>
+                </ol>
+                <ol class="times" start="31">
+                    <li id="31">00h:00m:00s</li>
+                    <li id="32">00h:00m:00s</li>
+                    <li id="33">00h:00m:00s</li>
+                    <li id="34">00h:00m:00s</li>
+                    <li id="35">00h:00m:00s</li>
+                    <li id="36">00h:00m:00s</li>
+                    <li id="37">00h:00m:00s</li>
+                    <li id="38">00h:00m:00s</li>
+                    <li id="39">00h:00m:00s</li>
+                    <li id="40">00h:00m:00s</li>
+                </ol>
+                <ol class="times" start="41">
+                    <li id="41">00h:00m:00s</li>
+                    <li id="42">00h:00m:00s</li>
+                    <li id="43">00h:00m:00s</li>
+                    <li id="44">00h:00m:00s</li>
+                    <li id="45">00h:00m:00s</li>
+                    <li id="46">00h:00m:00s</li>
+                    <li id="47">00h:00m:00s</li>
+                    <li id="48">00h:00m:00s</li>
+                    <li id="49">00h:00m:00s</li>
+                    <li id="50">00h:00m:00s</li>
+                </ol>
+                <ol class="times" start="51">
+                    <li id="51">00h:00m:00s</li>
+                    <li id="52">00h:00m:00s</li>
+                    <li id="53">00h:00m:00s</li>
+                    <li id="54">00h:00m:00s</li>
+                    <li id="55">00h:00m:00s</li>
+                    <li id="56">00h:00m:00s</li>
+                    <li id="57">00h:00m:00s</li>
+                    <li id="58">00h:00m:00s</li>
+                    <li id="59">00h:00m:00s</li>
+                    <li id="60">00h:00m:00s</li>
+                </ol>
+
+                
+            </fieldset>
+
+            <button type="reset" id="clear_time">Clear List</button>
+            <button type="reset" id="save_time" disabled>Save List</button>
+            <br>
+            <button type="reset" name="remove" id="remove">Remove Time</button>
+            <input type="number" name="remove" id="remove_index" placeholder="# 1-60" min="1" max="60">
+        </form>
+
+    </div> <!-- #container -->
+
+
+</body>
+</html>
