@@ -97,8 +97,9 @@ fieldset {
 ol.times {
     display: inline-block;
     margin-right: 5%;
-	margin-bottom: 0;
+    margin-bottom: 0;
     font-size: .6em;
+    width: 30%;
 }
 
 button {
