@@ -99,7 +99,10 @@ ol.times {
     margin-right: 5%;
     margin-bottom: 0;
     font-size: .6em;
-    width: 30%;
+}
+
+.times {
+    width: 25%;
 }
 
 button {
