@@ -91,18 +91,22 @@ fieldset {
 }
 
 fieldset {
-    text-align: center;
+    text-align: left;
+    width: 70%;
+    margin: auto;
 }
 
 ol.times {
     display: inline-block;
-    margin-right: 5%;
-    margin-bottom: 0;
-    font-size: .6em;
+/*     margin-right: 5%;
+    margin-bottom: 0; */
+    text-align: left;
+    font-size: .5em;
 }
 
 .times {
     width: 25%;
+    margin: 2% 9% 2% -5;
 }
 
 button {
