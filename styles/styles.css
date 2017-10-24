@@ -5,7 +5,7 @@ body {
     background: url(https://s5.postimg.org/718odgbuf/evening_sky.jpg) center center no-repeat;
     background-size: cover;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 #container {
